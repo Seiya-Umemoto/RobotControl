@@ -14,20 +14,20 @@ public class TeamProject_1
             speed = RobotWalk(signal,speed);
             if (speed == -1) {
                 System.out.println("Please input a signal name again");
-                continue;
+                break;
             } else {
-                System.out.println("traffic light:" + signal + " speed:" + speed);
+                System.out.println("traffic light:" + signal + ", speed:" + speed);
                 break;
             }
         }
     }
     public static double RobotWalk(String signal, double speed) {
-        if (signal == "green") {
+        if (signal == "green") {  //조건1
             return speed;
         } else {
-            if (signal == "yellow") {
+            if (signal == "yellow") {  //조건2
                 return speed * 1.2;
-            } else if (signal == "red") {
+            } else if (signal == "red") {  //조건3
                 return 0;
             }
         }
