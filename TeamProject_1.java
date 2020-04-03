@@ -8,15 +8,15 @@
 public class TeamProject_1
 {
     public static void main(String[] args) {
-        String signal;
-        double speed;
+        String signal = args[0];
+        double speed = Double.parseDouble(args[1]);
         while (true) {
-            double speed = RobotWalk(args[0],Double.parseDouble(args[1]));
+            speed = RobotWalk(signal,speed);
             if (speed == -1) {
                 System.out.println("Please input a signal name again");
                 continue;
             } else {
-                System.out.println("traffic light:" + args[0] + " speed:" + speed);
+                System.out.println("traffic light:" + signal + " speed:" + speed);
                 break;
             }
         }
