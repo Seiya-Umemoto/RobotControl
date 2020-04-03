@@ -8,10 +8,10 @@
 public class TeamProject_1
 {
     public static void main(String[] args) {
-        String signal;
-        double speed;
+        String signal;              //변수선언: 교통신호
+        double speed;               //변수선언: 로봇의 현재속도
         while (true) {
-            double speed = RobotWalk(args[0],Double.parseDouble(args[1]));
+            double speed = RobotWalk(args[0],Double.parseDouble(args[1]));  //메소드 선언
             if (speed == -1) {
                 System.out.println("Please input a signal name again");
                 continue;
@@ -22,12 +22,12 @@ public class TeamProject_1
         }
     }
     public static double RobotWalk(String signal, double speed) {
-        if (signal == "green") {
+        if (signal == "green") {  //조건1
             return speed;
         } else {
-            if (signal == "yellow") {
+            if (signal == "yellow") {  //조건2
                 return speed * 1.2;
-            } else if (signal == "red") {
+            } else if (signal == "red") {  //조건3
                 return 0;
             }
         }
