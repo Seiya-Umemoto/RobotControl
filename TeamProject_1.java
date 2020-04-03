@@ -1,6 +1,7 @@
-
+import java.util.Scanner;
+import java.util.InputMismatchException;
 /**
- * This class is for controling the speed of the robot depending of the colors of a traffic light
+ * This class is for controling the speed of the robot depending on the colors of a traffic light
  * 
  * @author (우메모토세이야_2018315056, 이재근_2015225129) 
  * @version (2020-04-03)
@@ -8,30 +9,45 @@
 public class TeamProject_1
 {
     public static void main(String[] args) {
-        String signal = args[0];
-        double speed = Double.parseDouble(args[1]);
+        String signal;
+        double speed;
+        Scanner scan = new Scanner(System.in);
         while (true) {
-            speed = RobotWalk(signal,speed);
-            if (speed == -1) {
-                System.out.println("Please input a signal name again");
-                break;
-            } else {
-                System.out.println("traffic light:" + signal + ", speed:" + speed);
-                break;
+            System.out.println("---------------------------------");
+            System.out.println("Select traffic light from green, yellow, or red:");
+            signal = scan.next();
+            if (!(signal.equals("green") || signal.equals("yellow") || signal.equals("red"))) {
+                System.out.println("Select from green, yellow, red. Type again");
+                continue;
             }
+            
+            System.out.println("Select your robot's speed:");
+            try {
+                speed = scan.nextDouble();
+            } catch (InputMismatchException e) {
+                System.out.println("Please input a number");
+                scan.next();
+                continue;
+            }
+            if (speed <= 0) {
+                System.out.println("Please set the robot's speed as positive to make it move");
+                continue;
+            }
+            
+            speed = RobotWalk(signal,speed);
+            System.out.println("traffic light:" + signal + ", speed:" + speed);
+            continue;
         }
     }
     public static double RobotWalk(String signal, double speed) {
-        if (signal == "green") {  //조건1
+        if (signal.equals("green")) {  //조건1
             return speed;
         } else {
-            if (signal == "yellow") {  //조건2
+            if (signal.equals("yellow")) {  //조건2
                 return speed * 1.2;
-            } else if (signal == "red") {  //조건3
+            } else {  //조건3
                 return 0;
             }
         }
-        // If the input is other than the colors of a traffic light
-        return -1;
     }
 }
