@@ -44,9 +44,11 @@ public class TeamProject_1
             return speed;                   //속도를 변경하지 않고 보행
         } else {
             if (signal.equals("yellow")) {  //조건2: 교통신호가 노란색이라면
-                return speed * 1.2;         //속도를 증가하여 보행
+                speed = speed*1.2;
+                return speed;                //속도를 증가하여 보행
             } else {                        //조건3: 교통신호가 빨간색이라면
-                return 0;                   //정지
+                speed = 0;
+                return speed;                //정지
             }
         }
     }
