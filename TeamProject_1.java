@@ -8,9 +8,9 @@ import java.util.InputMismatchException;
  */
 public class TeamProject_1
 {
+    static double speed;
     public static void main(String[] args) {
         String signal;
-        double speed;
         Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.println("---------------------------------");
@@ -34,19 +34,17 @@ public class TeamProject_1
                 continue;
             }
             
-            speed = RobotWalk(signal,speed);
+            RobotWalk(signal, speed);
             System.out.println("traffic light:" + signal + ", speed:" + speed);
-            continue;
         }
     }
-    public static double RobotWalk(String signal, double speed) {
-        if (signal.equals("green")) {  //조건1
-            return speed;
+    public static void RobotWalk(String signal, double spd) {
+        if (signal.equals("green")) { 
         } else {
-            if (signal.equals("yellow")) {  //조건2
-                return speed * 1.2;
-            } else {  //조건3
-                return 0;
+            if (signal.equals("yellow")) {
+                speed = spd * 1.2;
+            } else {
+                speed = 0;
             }
         }
     }
