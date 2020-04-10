@@ -1,20 +1,20 @@
-import java.util.Scanner;
-import java.util.InputMismatchException;
+import java.util.*;
 /**
- * This class is for controling the speed of the robot depending on the colors of a traffic light
+ * This class is for main method which conducts a robotwalk test.
  * 
  * @author (우메모토세이야_2018315056, 이재근_2015225129) 
  * @version (2020-04-03)
  */
-public class TeamProject_1
+public class RobotTest
 {
-    static double speed;
     public static void main(String[] args) {
-        String signal;
+        String signal; // 신호등(녹색, 황색, 적색)
+        
         Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.println("---------------------------------");
             System.out.println("Select traffic light from green, yellow, or red:");
+            
             signal = scan.next();
             if (!(signal.equals("green") || signal.equals("yellow") || signal.equals("red"))) {
                 System.out.println("Select from green, yellow, red. Type again");
@@ -23,30 +23,19 @@ public class TeamProject_1
             
             System.out.println("Select your robot's speed:");
             try {
-                speed = scan.nextDouble();
+                Robot.speed = scan.nextDouble();
             } catch (InputMismatchException e) {
                 System.out.println("Please input a number");
                 scan.next();
                 continue;
             }
-            if (speed <= 0) {
+            if (Robot.speed <= 0) {
                 System.out.println("Please set the robot's speed as positive to make it move");
                 continue;
             }
             
-            RobotWalk(signal, speed);
-            System.out.println("traffic light:" + signal + ", speed:" + speed);
-        }
-    }
-    public static void RobotWalk(String signal, double speed) {
-        if (signal.equals("green")) { 
-        } else {
-            if (signal.equals("yellow")) {
-                TeamProject_1.speed = speed * 1.2;
-            } else {
-                TeamProject_1.speed = 0;
-            }
+            Robot.RobotWalk(signal, Robot.speed); // 인수(신호등 색깔, 로봇의 속도)
+            System.out.println("traffic light:" + signal + ", speed:" + Robot.speed);
         }
     }
 }
-
