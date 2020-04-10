@@ -3,6 +3,6 @@ comment0.target=TeamProject_1
 comment0.text=\r\n\ This\ class\ is\ for\ controling\ the\ speed\ of\ the\ robot\ depending\ on\ the\ colors\ of\ a\ traffic\ light\r\n\ \r\n\ @author\ (\uC6B0\uBA54\uBAA8\uD1A0\uC138\uC774\uC57C_2018315056,\ \uC774\uC7AC\uADFC_2015225129)\ \r\n\ @version\ (2020-04-03)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=signal\ spd
+comment2.params=signal\ speed
 comment2.target=void\ RobotWalk(java.lang.String,\ double)
 numComments=3

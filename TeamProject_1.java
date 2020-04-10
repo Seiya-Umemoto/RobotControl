@@ -38,13 +38,13 @@ public class TeamProject_1
             System.out.println("traffic light:" + signal + ", speed:" + speed);
         }
     }
-    public static void RobotWalk(String signal, double spd) {
+    public static void RobotWalk(String signal, double speed) {
         if (signal.equals("green")) { 
         } else {
             if (signal.equals("yellow")) {
-                speed = spd * 1.2;
+                TeamProject_1.speed = speed * 1.2;
             } else {
-                speed = 0;
+                TeamProject_1.speed = 0;
             }
         }
     }
