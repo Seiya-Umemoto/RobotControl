@@ -1,6 +1,15 @@
 #BlueJ class context
 comment0.target=RobotTest
-comment0.text=\r\n\ This\ class\ is\ for\ a\ main\ method\ which\ conducts\ a\ robotwalk\ test.\r\n\ \r\n\ @author\ (\uC6B0\uBA54\uBAA8\uD1A0\uC138\uC774\uC57C_2018315056,\ \uC774\uC7AC\uADFC_2015225129)\ \r\n\ @version\ (2020-04-03)\r\n
-comment1.params=args
-comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment0.text=\r\n\ The\ test\ class\ RobotTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=RobotTest()
+comment1.text=\r\n\ Default\ constructor\ for\ test\ class\ RobotTest\r\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\r\n\ Sets\ up\ the\ test\ fixture.\r\n\r\n\ Called\ before\ every\ test\ case\ method.\r\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
+comment4.params=
+comment4.target=void\ only_test()
+numComments=5

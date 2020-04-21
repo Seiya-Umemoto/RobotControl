@@ -1,42 +1,55 @@
-import java.util.*;
+
+
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 /**
- * This class is for a main method which conducts a robotwalk test.
- * 
- * @author (우메모토세이야_2018315056, 이재근_2015225129) 
- * @version (2020-04-03)
+ * The test class RobotTest.
+ *
+ * @author  (your name)
+ * @version (a version number or a date)
  */
 public class RobotTest
 {
-    public static void main(String[] args) {
-        String signal; // 신호등(녹색, 황색, 적색)
-        
-        Scanner scan = new Scanner(System.in);
-        Robot robot = new Robot();
-        while (true) {
-            System.out.println("---------------------------------");
-            System.out.println("Select traffic light from green, yellow, or red:");
-            
-            signal = scan.next();
-            if (!(signal.equals("green") || signal.equals("yellow") || signal.equals("red"))) {
-                System.out.println("Select from green, yellow, red. Type again");
-                continue;
-            }
-            
-            System.out.println("Select your robot's speed:");
-            try {
-                robot.speed = scan.nextDouble();
-            } catch (InputMismatchException e) {
-                System.out.println("Please input a number");
-                scan.next();
-                continue;
-            }
-            if (robot.speed <= 0) {
-                System.out.println("Please set the robot's speed as positive to make it move");
-                continue;
-            }
-            
-            robot.RobotWalk(signal, robot.speed); // 인수(신호등 색깔, 로봇의 속도)
-            System.out.println("traffic light:" + signal + ", speed:" + robot.speed);
-        }
+    /**
+     * Default constructor for test class RobotTest
+     */
+    public RobotTest()
+    {
+    }
+
+    /**
+     * Sets up the test fixture.
+     *
+     * Called before every test case method.
+     */
+    @Before
+    public void setUp()
+    {
+    }
+
+    /**
+     * Tears down the test fixture.
+     *
+     * Called after every test case method.
+     */
+    @After
+    public void tearDown()
+    {
+    }
+
+    @Test
+    public void only_test()
+    {
+        Robot robot1 = new Robot();
+        robot1.setSpeed(30.0);
+        robot1.setSignal("green");
+        assertEquals(30.0, robot1.getSpeed(), 0);
+        assertEquals(30.0, robot1.getSpeed(), 0);
+        assertEquals("green", robot1.getSignal());
+        assertEquals(30.0, robot1.RobotWalk("green", 30.0), 0);
     }
 }
+
