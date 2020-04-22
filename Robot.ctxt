@@ -1,6 +1,20 @@
 #BlueJ class context
 comment0.target=Robot
 comment0.text=\r\n\ This\ class\ is\ for\ controling\ the\ speed\ of\ the\ robot\ depending\ on\ the\ colors\ of\ a\ traffic\ light\r\n\ \r\n\ @author\ (\uC6B0\uBA54\uBAA8\uD1A0\uC138\uC774\uC57C_2018315056,\ \uC774\uC7AC\uADFC_2015225129)\ \r\n\ @version\ (2020-04-03)\r\n
+<<<<<<< HEAD
 comment1.params=signal\ speed
 comment1.target=double\ RobotWalk(java.lang.String,\ double)
 numComments=2
+=======
+comment1.params=speed
+comment1.target=void\ setSpeed(double)
+comment2.params=signal
+comment2.target=void\ setSignal(java.lang.String)
+comment3.params=
+comment3.target=double\ getSpeed()
+comment4.params=
+comment4.target=java.lang.String\ getSignal()
+comment5.params=signal\ speed
+comment5.target=double\ RobotWalk(java.lang.String,\ double)
+numComments=6
+>>>>>>> d8bbaf913a5fcbfc8f805c4867e0431bae4e425d
