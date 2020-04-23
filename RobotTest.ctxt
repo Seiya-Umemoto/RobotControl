@@ -11,9 +11,13 @@ comment3.params=
 comment3.target=void\ tearDown()
 comment3.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
 comment4.params=
-<<<<<<< HEAD
-comment4.target=void\ robot_test()
-=======
-comment4.target=void\ only_test()
->>>>>>> d8bbaf913a5fcbfc8f805c4867e0431bae4e425d
-numComments=5
+comment4.target=void\ StatementCoveragePath1()
+comment5.params=
+comment5.target=void\ StatementCoveragePath2()
+comment6.params=
+comment6.target=void\ DecisionCoveragePath1()
+comment7.params=
+comment7.target=void\ DecisionCoveragePath2()
+comment8.params=
+comment8.target=void\ DecisionCoveragePath3()
+numComments=9
