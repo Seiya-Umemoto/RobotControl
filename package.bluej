@@ -5,10 +5,17 @@ dependency1.type=UsesDependency
 dependency2.from=RobotTest1
 dependency2.to=Robot
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=838
 editor.fx.0.width=1550
 editor.fx.0.x=-7
 editor.fx.0.y=-7
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+>>>>>>> 0bb88b4929004a2e74bdcc0f7973c37f5235e33b
 objectbench.height=140
 objectbench.width=1512
 package.divider.horizontal=0.6
