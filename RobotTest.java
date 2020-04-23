@@ -39,6 +39,7 @@ public class RobotTest
     public void tearDown()
     {
     }
+<<<<<<< HEAD
 
     @Test
     public void StatementCoveragePath1()
@@ -80,3 +81,6 @@ public class RobotTest
 
 
 
+=======
+}
+>>>>>>> 02e88c57686a15936b744cc14581399d38dbc277

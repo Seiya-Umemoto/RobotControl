@@ -10,6 +10,7 @@ comment2.text=\r\n\ Sets\ up\ the\ test\ fixture.\r\n\r\n\ Called\ before\ every
 comment3.params=
 comment3.target=void\ tearDown()
 comment3.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
+<<<<<<< HEAD
 comment4.params=
 comment4.target=void\ StatementCoveragePath1()
 comment5.params=
@@ -21,3 +22,6 @@ comment7.target=void\ DecisionCoveragePath2()
 comment8.params=
 comment8.target=void\ DecisionCoveragePath3()
 numComments=9
+=======
+numComments=4
+>>>>>>> 02e88c57686a15936b744cc14581399d38dbc277
