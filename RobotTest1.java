@@ -3,7 +3,7 @@ import java.util.*;
  * This class is for a main method which conducts a robotwalk test.
  * 
  * @author (우메모토세이야_2018315056, 이재근_2015225129) 
- * @version (2020-04-03)
+ * @version (2020-04-24)
  */
 public class RobotTest1
 {
