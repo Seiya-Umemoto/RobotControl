@@ -1,8 +1,8 @@
 #BlueJ package file
-dependency1.from=RobotTest
+dependency1.from=RobotTest1
 dependency1.to=Robot
 dependency1.type=UsesDependency
-dependency2.from=RobotTest1
+dependency2.from=RobotTest
 dependency2.to=Robot
 dependency2.type=UsesDependency
 editor.fx.0.height=737

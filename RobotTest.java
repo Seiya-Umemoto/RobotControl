@@ -38,9 +38,8 @@ public class RobotTest
     @After
     public void tearDown()
     {
+        
     }
-<<<<<<< HEAD
-
     @Test
     public void StatementCoveragePath1()
     {
@@ -76,11 +75,3 @@ public class RobotTest
         assertEquals(0.0, robot5.RobotWalk("red", 30.0), 0);
     }
 }
-
-
-
-
-
-=======
-}
->>>>>>> 02e88c57686a15936b744cc14581399d38dbc277
