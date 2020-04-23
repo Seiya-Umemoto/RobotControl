@@ -20,6 +20,5 @@ public class RobotTest1
         if (estimated_speed == after_speed) {
            System.out.println("Test OK");
         } 
-        }
-        
+    }        
 }
