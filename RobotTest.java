@@ -38,40 +38,17 @@ public class RobotTest
     @After
     public void tearDown()
     {
-        
     }
+
     @Test
-    public void StatementCoveragePath1()
+    public void Test_green()
     {
         Robot robot1 = new Robot();
-        assertEquals(36.0, robot1.RobotWalk("yellow", 30.0), 0);
-    }
-
-    @Test
-    public void StatementCoveragePath2()
-    {
-        Robot robot2 = new Robot();
-        assertEquals(0.0, robot2.RobotWalk("red", 30.0), 0);
-    }
-
-    @Test
-    public void DecisionCoveragePath1()
-    {
-        Robot robot3 = new Robot();
-        assertEquals(30.0, robot3.RobotWalk("green", 30.0), 0);
-    }
-
-    @Test
-    public void DecisionCoveragePath2()
-    {
-        Robot robot4 = new Robot();
-        assertEquals(36.0, robot4.RobotWalk("yellow", 30.0), 0);
-    }
-
-    @Test
-    public void DecisionCoveragePath3()
-    {
-        Robot robot5 = new Robot();
-        assertEquals(0.0, robot5.RobotWalk("red", 30.0), 0);
+        robot1.setSpeed(30.0);
+        robot1.setSignal("green");
+        assertEquals(30.0, robot1.getSpeed(), 0);
+        assertEquals("green", robot1.getSignal());
+        assertEquals(30.0, robot1.RobotWalk("green", 30.0), 0);
     }
 }
+
